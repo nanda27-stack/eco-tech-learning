@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><title>Penutup | Eco-Tech Learning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: { eco: { 50:'#effcf4',100:'#d8f8e4',500:'#22a45a',600:'#16834d',700:'#11633d',900:'#123b2b' } } } } }
+</script>
+<style>
+  html { scroll-behavior:smooth }
+  .float { animation: float 3s ease-in-out infinite }
+  .fade-up { animation: fadeUp .8s ease both }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-emerald-100">
+  <nav class="max-w-6xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-3">
+    <a href="index.html" class="font-black text-xl text-eco-700">🌱 ECO-TECH</a>
+    <button id="menuBtn" class="md:hidden px-3 py-2 rounded-lg bg-eco-50 text-eco-700" aria-label="Buka menu">☰</button>
+    <div id="menu" class="hidden md:flex w-full md:w-auto flex-col md:flex-row gap-2 md:gap-5 text-sm font-semibold text-slate-700">
+      <a class="hover:text-eco-600" href="index.html">Beranda</a>
+      <a class="hover:text-eco-600" href="masalah-lingkungan.html">Masalah Lingkungan</a>
+      <a class="hover:text-eco-600" href="teknologi-lingkungan.html">Teknologi</a>
+      <a class="hover:text-eco-600" href="smart-environment.html">Smart Environment</a>
+      <a class="hover:text-eco-600" href="solusi.html">Solusi</a>
+      <a class="hover:text-eco-600" href="kuis.html">Kuis</a>
+      <a class="hover:text-eco-600" href="penutup.html">Penutup</a>
+    </div>
+  </nav>
+</header>
+<script>
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('menu').classList.toggle('hidden'));
+</script>
+
+
+<main class="max-w-5xl mx-auto px-5 py-16">
+ <section class="text-center bg-gradient-to-br from-eco-900 to-eco-600 text-white rounded-3xl p-10 md:p-16">
+  <div class="text-7xl float">🌏</div><p class="mt-6 font-bold tracking-widest text-emerald-100">AKHIR PEMBELAJARAN</p>
+  <h1 class="text-4xl md:text-5xl font-black mt-3">Masa Depan Bumi Ada di Tangan Kita</h1>
+  <p class="max-w-2xl mx-auto mt-5 text-emerald-50">Teknologi lingkungan membantu manusia mengurangi dampak terhadap alam. Namun, teknologi perlu disertai kepedulian dan tindakan nyata dari setiap orang.</p>
+ </section>
+ <section class="bg-white rounded-2xl p-8 shadow-sm mt-8"><h2 class="text-2xl font-black text-eco-900">Kesimpulan</h2><p class="mt-3 text-slate-600">Teknologi lingkungan mencakup berbagai inovasi, mulai dari energi terbarukan, pengolahan limbah, hingga sistem pemantauan berbasis sensor. Penerapannya dapat mendukung lingkungan yang lebih bersih, sehat, dan berkelanjutan.</p>
+ <h2 class="text-xl font-black text-eco-900 mt-7">Identitas pembuat</h2><div class="mt-3 space-y-1 text-slate-600"><p><b>Nama:</b> Muhammad Ananda Arasidhu</p><p><b>Program Studi:</b> Pendidikan Komputer</p><p><b>Kelas:</b> PENDIKOM 2024B</p><p><b>Mata Kuliah:</b> Teknologi Lingkungan</p></div></section>
+ <div class="text-center mt-8"><a href="index.html" class="inline-block bg-eco-600 text-white px-6 py-3 rounded-xl font-bold">↻ Kembali ke Beranda</a></div>
+</main>
+
+
+<footer class="bg-eco-900 text-emerald-50 mt-16">
+ <div class="max-w-6xl mx-auto px-5 py-8 text-center">
+  <p class="font-bold">ECO-TECH LEARNING</p>
+  <p class="text-sm text-emerald-100 mt-2">Belajar teknologi, menjaga bumi.</p>
+  <p class="text-xs text-emerald-200 mt-4">Media Pembelajaran Teknologi Lingkungan</p>
+ </div>
+</footer>
+
+</body></html>

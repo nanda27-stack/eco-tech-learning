@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><title>Teknologi Lingkungan | Eco-Tech Learning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: { eco: { 50:'#effcf4',100:'#d8f8e4',500:'#22a45a',600:'#16834d',700:'#11633d',900:'#123b2b' } } } } }
+</script>
+<style>
+  html { scroll-behavior:smooth }
+  .float { animation: float 3s ease-in-out infinite }
+  .fade-up { animation: fadeUp .8s ease both }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-emerald-100">
+  <nav class="max-w-6xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-3">
+    <a href="index.html" class="font-black text-xl text-eco-700">🌱 ECO-TECH</a>
+    <button id="menuBtn" class="md:hidden px-3 py-2 rounded-lg bg-eco-50 text-eco-700" aria-label="Buka menu">☰</button>
+    <div id="menu" class="hidden md:flex w-full md:w-auto flex-col md:flex-row gap-2 md:gap-5 text-sm font-semibold text-slate-700">
+      <a class="hover:text-eco-600" href="index.html">Beranda</a>
+      <a class="hover:text-eco-600" href="masalah-lingkungan.html">Masalah Lingkungan</a>
+      <a class="hover:text-eco-600" href="teknologi-lingkungan.html">Teknologi</a>
+      <a class="hover:text-eco-600" href="smart-environment.html">Smart Environment</a>
+      <a class="hover:text-eco-600" href="solusi.html">Solusi</a>
+      <a class="hover:text-eco-600" href="kuis.html">Kuis</a>
+      <a class="hover:text-eco-600" href="penutup.html">Penutup</a>
+    </div>
+  </nav>
+</header>
+<script>
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('menu').classList.toggle('hidden'));
+</script>
+
+
+<main class="max-w-6xl mx-auto px-5 py-14">
+ <p class="text-eco-600 font-bold">MATERI 02</p><h1 class="text-4xl font-black text-eco-900 mt-2">Apa Itu Teknologi Lingkungan?</h1>
+ <p class="text-lg text-slate-600 mt-4 max-w-3xl">Teknologi lingkungan adalah penerapan ilmu pengetahuan dan rekayasa untuk mencegah, mengurangi, memantau, atau memperbaiki dampak kegiatan manusia terhadap lingkungan.</p>
+ <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+  <div class="bg-white rounded-2xl p-5 shadow-sm"><div class="text-5xl">☀️</div><h2 class="font-bold mt-3">Panel Surya</h2><p class="text-sm text-slate-600 mt-2">Mengubah energi cahaya matahari menjadi energi listrik.</p></div>
+  <div class="bg-white rounded-2xl p-5 shadow-sm"><div class="text-5xl">♻️</div><h2 class="font-bold mt-3">Daur Ulang</h2><p class="text-sm text-slate-600 mt-2">Mengolah bahan bekas menjadi bahan atau produk yang berguna.</p></div>
+  <div class="bg-white rounded-2xl p-5 shadow-sm"><div class="text-5xl">🚰</div><h2 class="font-bold mt-3">Pengolahan Air</h2><p class="text-sm text-slate-600 mt-2">Mengolah air agar memenuhi persyaratan penggunaan tertentu.</p></div>
+  <div class="bg-white rounded-2xl p-5 shadow-sm"><div class="text-5xl">🌬️</div><h2 class="font-bold mt-3">Turbin Angin</h2><p class="text-sm text-slate-600 mt-2">Memanfaatkan energi angin untuk menghasilkan listrik.</p></div>
+ </div>
+ <section class="mt-12 bg-white rounded-2xl p-7 shadow-sm"><h2 class="text-2xl font-black text-eco-900">Mengapa teknologi lingkungan penting?</h2><ul class="list-disc pl-6 mt-4 space-y-2 text-slate-600"><li>Membantu mengurangi pencemaran.</li><li>Meningkatkan efisiensi penggunaan sumber daya.</li><li>Mendukung energi yang lebih bersih.</li><li>Membantu pemantauan kondisi lingkungan.</li></ul></section>
+ <div class="mt-8 flex justify-end"><a href="smart-environment.html" class="bg-eco-600 text-white px-5 py-3 rounded-xl font-bold">Materi Selanjutnya →</a></div>
+</main>
+
+
+<footer class="bg-eco-900 text-emerald-50 mt-16">
+ <div class="max-w-6xl mx-auto px-5 py-8 text-center">
+  <p class="font-bold">ECO-TECH LEARNING</p>
+  <p class="text-sm text-emerald-100 mt-2">Belajar teknologi, menjaga bumi.</p>
+  <p class="text-xs text-emerald-200 mt-4">Media Pembelajaran Teknologi Lingkungan</p>
+ </div>
+</footer>
+
+</body></html>
